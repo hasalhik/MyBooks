@@ -1,36 +1,27 @@
 package com.example.mybooks.screens.fragments;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContract;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.RequiresApi;
-import androidx.core.app.ActivityOptionsCompat;
-import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.canhub.cropper.CropImage;
-import com.canhub.cropper.CropImageActivity;
 import com.canhub.cropper.CropImageContract;
 import com.canhub.cropper.CropImageContractOptions;
 import com.canhub.cropper.CropImageOptions;
@@ -43,7 +34,6 @@ import com.example.mybooks.screens.pojo.BookVolumeInfo;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
-import java.net.URI;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -90,10 +80,10 @@ public class FragmentCreateBook extends Fragment {
                             Log.d("MyLog", "cadsda " + result1.getOriginalUri());
                             Log.d("MyLog", "cadsda " + result1.getUriFilePath(getContext(), true));
                             bookFilePath = result1.getUriFilePath(getContext(), true);
-                            Log.d("MyLog", "bookFilePat "+bookFilePath);
+                            Log.d("MyLog", "bookFilePat " + bookFilePath);
                             File file = new File(result1.getUriFilePath(getContext(), true));
                             bookFilePath = file.getPath();
-                            Log.d("MyLog", "bookFilePat "+bookFilePath);
+                            Log.d("MyLog", "bookFilePat " + bookFilePath);
                             binding.imageView.setImageURI(
                                     Uri.fromFile(file));
 
