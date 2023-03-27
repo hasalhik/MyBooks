@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Books</string>
+    <string name="addNewBook">Создать книгу</string>
+    <string name="addForInternet">Поиск книги</string>
+    <string name="home">Книги</string>
+    <string name="textViewBoofNameLabel">Название:</string>
+    <string name="textViewBookAuthorLabel">Автор:</string>
+    <string name="EntereSearchText">Ведите текст для поиска</string>
+    <string name="noAuthor">Неизвестен</string>
+    <string name="textViewLabelReleaseDate">Дата публикации:</string>
+    <string name="noreleaseDate">Неизвестна</string>
+    <string name="noOverview">Отсутвует</string>
+    <string name="yes">Да</string>
+    <string name="No">Нет</string>
+    <string name="areYouSureDelete">Вы действительно хотите удалить книгу?</string>
+    <string name="BookRemved">Книга удалена</string>
+    <string name="BookInsert">Книга добавленна</string>
+    <string name="hintTitle">Название книги</string>
+    <string name="hintOverview">Описание</string>
+    <string name="hintReleaseDate">Дата публикации</string>
+    <string name="hintAuthor">Автор</string>
+    <string name="addValue">Ведите значение</string>
+    <string name="printTypeMyBook">MY_BOOK</string>
+</resources>

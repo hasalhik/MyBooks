@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.fragments.FragmentListMyBooks">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screens.single_chat.SingleChatFragment">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/books_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/books_text_search"
+            tools:listitem="@layout/book_item"
+            android:paddingBottom="@dimen/bottomPadding"/>
+
+
+        <ImageView
+            android:id="@+id/books_start_search_phone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/separator"
+            app:layout_constraintBottom_toBottomOf="@id/books_text_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edit_text_view_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/books_start_search_phone"
+            app:layout_constraintStart_toEndOf="@id/books_clear_search"
+            app:layout_constraintBottom_toBottomOf="@id/books_start_search_phone"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/books_plus_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintBottom_toBottomOf="@+id/books_start_search_phone"
+            app:layout_constraintStart_toStartOf="@+id/books_start_search_phone" />
+
+        <ImageView
+            android:id="@+id/books_clear_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_search_off"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/books_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/books_start_search_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

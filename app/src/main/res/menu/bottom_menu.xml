@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/addNewBook"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/addNewBook" />
+    <item android:id="@+id/addForInternet"
+        android:icon="@drawable/ic_internet_svgrepo_com"
+        android:title="@string/addForInternet" />
+</menu>

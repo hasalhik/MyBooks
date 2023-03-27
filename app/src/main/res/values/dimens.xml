@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_small_margin">8dp</dimen>
+    <dimen name="app_margin">16dp</dimen>
+    <dimen name="bottomPadding">60dp</dimen>
+    <dimen name="appSuperSmallMargin">4dp</dimen>
+</resources>
